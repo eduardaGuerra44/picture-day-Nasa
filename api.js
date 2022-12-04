@@ -19,6 +19,7 @@ async function respondeAPI() {
 
 
 function usaApiDate(date) {
-    document.querySelector('#descritivo').innerHTML += date.explanation
-    document.querySelector('#descritivo').innerHTML += `<img src="${date.url}">`
+    document.querySelector('#descritivo').innerHTML = date.explanation
+    document.querySelector('#imagem').innerHTML = `<img class='imagem' src="${date.url}">`
 }
+
